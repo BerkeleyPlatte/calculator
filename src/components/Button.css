@@ -21,3 +21,15 @@ button {
   .equals:hover {
     background-color: rgb(228, 39, 15);
   }
+
+  .odd {
+    background-color: aquamarine;
+  }
+
+  .even {
+    background-color: chartreuse;
+  }
+
+  .op {
+    background-color: darksalmon;
+  }

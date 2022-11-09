@@ -2,6 +2,7 @@ import Wrapper from "./components/Wrapper";
 import Screen from "./components/Screen";
 import ButtonBox from "./components/ButtonBox";
 import Button from "./components/Button";
+import buttonClassNamer from "./Helpers";
 
 const btnValues = [
   ["C", "+-", "%", "/"],
@@ -21,7 +22,7 @@ const App = () => {
             return (
               <Button
                 key={i}
-                className={btn === "=" ? "equals" : ""}
+                className={buttonClassNamer(btn)}
                 value={btn}
                 onClick={() => {
                   console.log(`${btn} clicked!`);
